@@ -1,0 +1,22 @@
+# Process records and local build output are not part of the published practice.
+others/
+build/
+
+# Terraform local state and cache
+infra/.terraform/
+infra/terraform.tfvars
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+!infra/terraform.tfvars.example
+
+# Local environment and editor metadata
+.env
+.env.*
+*.pem
+__pycache__/
+*.pyc
+.codeartsdoer/
+.vscode/
+.idea/
+node_modules/
