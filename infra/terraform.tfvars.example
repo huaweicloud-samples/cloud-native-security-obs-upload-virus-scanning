@@ -1,0 +1,11 @@
+# Copy this file to terraform.tfvars and fill in your own values.
+# Never commit terraform.tfvars or any state file.
+
+region           = "cn-north-4"
+app_name         = "upload-content-check"
+obs_bucket_name  = "<your-globally-unique-bucket-name>"
+
+preferred_action = "delete"   # delete | tag
+content_prefix   = ""
+enable_timer     = true
+timer_schedule   = "0 0 3 * * ?"
